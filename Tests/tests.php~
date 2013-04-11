@@ -1,0 +1,7 @@
+<?php
+	class Tests {
+		public function __construct() {
+			echo 'Class test is created';
+		}
+	}
+?>

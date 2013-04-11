@@ -1,0 +1,16 @@
+<?php
+// SYSTEM PROPERTIES
+date_default_timezone_set( "Europe/Stockholm" ); // Brutal override of the php.ini file.
+
+// FILE STRUCTURE
+define("BASE_DIR", "/srv/www/htdocs/good-omens/");
+
+// DATABASE
+define( "DB_TYPE", 		"MYSQLI" );
+//define( "DB_SERVER", "mysql10.cliche.se" );
+define( "DB_SERVER", 	"localhost")
+define( "DB_USER", 		"good-omens.se" );
+define( "DB_PASSWD", 	"zka72kbh" );
+define( "DB_NAME", 		"good_omens_se" );
+
+?>
