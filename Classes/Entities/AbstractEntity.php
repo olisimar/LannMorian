@@ -18,11 +18,19 @@
 			throw new Exp\NotImplementedException();
 		}
 		
+		public function getTableName() {
+			throw new Exp\NotImplementedException();
+		}
+		
 		public function remove() {
 			throw new Exp\NotImplementedException();
 		}
 		
-		protected function isUpdated() {
+		public static function getEntity($id) {
+			
+		}
+		
+		public function isUpdated() {
 			return $this->updated;
 		}
 		

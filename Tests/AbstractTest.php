@@ -8,9 +8,9 @@
 		public static function assertTrue($arg, $mess="No Message. Value in: ") {
 		$codes = AbstractTest::getCodes();
 			if($arg) {
-				return $codes['passed'] . $mess . $arg;
+				return $codes['passed'] . $mess;
 			}
-			throw new Exp\TestException( $codes['failed'] . " Argument was True when Expected to be False " . $arg);
+			throw new Exp\TestException( $codes['failed'] . " Argument was True when Expected to be True " . $arg);
 		}
 		
 		public static function assertFalse($arg, $mess="No Message. Value in: ") {
@@ -18,7 +18,7 @@
 			if($arg) {
 				throw new Exp\TestException( $codes['passed'] . " Argument was True when Expected to be False " . $arg);
 			}
-			return $codes['passed'] . $mess . $arg;
+			return $codes['passed'] . $mess;
 		}
 		
 		public static function assertEqual($arg1, $arg2, $mess="No Message. Values in: ") {

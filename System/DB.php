@@ -53,6 +53,15 @@
 
 			return $outData;
 		}
+		
+		public function query($sql) {
+			try {
+				$result = DB::query($sql);
+				return $result;
+			} catch(Exception $e) {
+				throw new DataBaseException("Failed to execute query.", 2100, $e, $sql);
+			}
+		}
 	}
 
 	/*

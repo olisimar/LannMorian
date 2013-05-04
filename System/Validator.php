@@ -54,5 +54,16 @@
 			}
 			return $isValid;
 		}
+		
+		public function isPositiveInteger($id) {
+			if(is_numeric($id)) {
+				if(is_int($id)) {
+					if($id > 0) {
+						return true;
+					}
+				}
+			}
+			return false;
+		}
 	}
 ?>

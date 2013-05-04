@@ -9,7 +9,7 @@
 		public function __construct() {}
 		
 		public function runTests() {
-			$toReturn  = "<h3> TESTS: Entity - Article </h3>";
+			$toReturn  = "<hr /> <h4> TESTS: Entity - Article </h4>";
 			$toReturn .= $this->test_if_article_even_loads();
 			$toReturn .= $this->test_check_updated_status_is_set_correctly();
 			return $toReturn;
