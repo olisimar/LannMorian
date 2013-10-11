@@ -3,7 +3,7 @@
  * This is a bootstrap file to include the various base things such as the
  * autoloader and error to exception handling.
  */
-	define("BASE_DIR", "/srv/www/htdocs/good-omens/");
+	define("BASE_DIR", "/srv/www/htdocs/LannMorian");
  	require_once BASE_DIR. '/System/sys_config.php';
 
 	class ClassAutoloader {

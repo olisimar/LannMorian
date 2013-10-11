@@ -42,6 +42,5 @@
 			$toReturn .= $testDog->runTests();
 			return $toReturn;
 		}
-		
 	}
 ?>

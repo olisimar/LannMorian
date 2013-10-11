@@ -75,6 +75,9 @@
 			return parent::isUpdated();
 		}
 		
+		public function setUpdated($updated=true) { 
+			parent::setUpdated($updated);
+		}		
 		public function setArticleId($artileId) {
 			$this->articleId = $artileId;
 		}
@@ -105,9 +108,6 @@
 		}
 		public function setCreated($created) {
 			$this->$created = $created;
-		}
-		public function setUpdated($updated) { 
-			parent::setUpdated($updated);
 		}
 	}
 ?>
